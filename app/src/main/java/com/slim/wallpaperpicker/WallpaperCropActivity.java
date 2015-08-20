@@ -93,7 +93,8 @@ public class WallpaperCropActivity extends Activity {
         mCropView = (CropView) findViewById(R.id.cropView);
 
         Intent cropIntent = getIntent();
-        mKeyguardMode = cropIntent.getBooleanExtra("keyguardMode", false);
+        String keyguardModeString = cropIntent.getStringExtra("keyguardMode");
+        mKeyguardMode = keyguardModeString != null && keyguardModeString.equals("1");
         final Uri imageUri = cropIntent.getData();
 
         if (imageUri == null) {
