@@ -28,8 +28,8 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4
 
-LOCAL_SRC_FILES := $(call all-java-files-under, app/src/main/java)
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/app/src/main/res
+LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
